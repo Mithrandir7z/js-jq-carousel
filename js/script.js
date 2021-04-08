@@ -26,6 +26,13 @@ $(rightArrow).click(function(){
 var leftArrow = $('.left-arrow');
 
 $(leftArrow).click(function(){
+    var currentActive = $('.active');
+    currentActive.removeClass('active');
 
-    alert("accesso alla funzione");
+    if( currentActive.hasClass('first') ) {
+        $('.images .last').addClass('active');
+    } else {
+        var prevImg = currentActive.prev();
+        prevImg.addClass('active');
+    }
 });
