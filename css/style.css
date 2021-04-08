@@ -22,11 +22,20 @@ img {
 }
 
 .left-arrow, .right-arrow {
-    background-color: grey;
-
+    font-size: 35px;
+    cursor: pointer;
 }
 
 .images {
     width: 1000px;
     height: auto;
+    padding: 50px;
+}
+
+.images img {
+    display: none;
+}
+
+.images img.active {
+    display: block;
 }
