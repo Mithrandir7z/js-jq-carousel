@@ -4,6 +4,29 @@
     box-sizing: border-box;
 }
 
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 100%;
+}
+
 .left-arrow, .right-arrow {
     background-color: grey;
+
+}
+
+.images {
+    width: 1000px;
+    height: auto;
 }
